@@ -1,0 +1,2276 @@
+2022-08-22 19:40:56,112:INFO:discord.client: logging in using static token
+2022-08-22 19:40:56,558:INFO:discord.client: Cleaning up tasks.
+2022-08-22 19:40:56,559:INFO:discord.client: Closing the event loop.
+2022-08-22 19:41:57,094:INFO:discord.client: logging in using static token
+2022-08-22 19:41:57,949:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 19:41:58,425:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-h6jc",{"micros":204525,"calls":["id_created",{"micros":863,"calls":[]},"session_lookup_time",{"micros":350,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"discord-sessions-blue-prd-2-18",{"micros":202242,"calls":["start_session",{"micros":155276,"calls":["discord-api-5dbb8ddd55-rvt2c",{"micros":149723,"calls":["get_user",{"micros":83445},"get_guilds",{"micros":5660},"send_scheduled_deletion_message",{"micros":15},"guild_join_requests",{"micros":2136},"authorized_ip_coro",{"micros":20}]}]},"starting_guild_connect",{"micros":39,"calls":[]},"presence_started",{"micros":16565,"calls":[]},"guilds_started",{"micros":30347,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]},"connect_finished",{"micros":6,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":1,"calls":[]}]}]}] (Session ID: e119fb2108bad8151c195421c40d006d).
+2022-08-22 19:42:00,440:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 19:43:05,671:ERROR:discord: Time: 2022-08-22 11:43:03.514000+00:00. Message content: ---Message content---
+**NOPE!** you have 79 **rubies**
+Better luck next time, **mystic**!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011239075505770557
+2022-08-22 19:43:12,582:ERROR:discord: Time: 2022-08-22 11:43:09.446000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+mystic — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:normiefish:697940429999439872> **normie fish**: 24,007
+<:goldenfish:697940429500317727> **golden fish**: 44
+<:EPICfish:543182761431793715> **EPIC fish**: 17
+<:woodenlog:770880739926999070> **wooden log**: 30,142,968
+<:EPIClog:541056003517710348> **EPIC log**: 1,114
+<:SUPERlog:541384398503673866> **SUPER log**: 159
+<:MEGAlog:545396411316043776> **MEGA log**: 7
+<:Banana:697940429483540522> **banana**: 13
+<:ruby:603304907650629653> **ruby**: 79
+<:potatocrop:818712007539818517> **potato**: 1,080
+<:carrotcrop:818712920820285450> **carrot**: 9,732
+<:breadcrop:818716266457071626> **bread**: 1,670
+<:wolfskin:541384010690199552> **wolf skin**: 2
+<:zombieeye:542483215122694166> **zombie eye**: 6
+<:unicornhorn:545329267425149112> **unicorn horn**: 3
+<:mermaidhairs:545721882805272596> **mermaid hair**: 20
+<:chip:546048827073757205> **chip**: 10
+<:dragonscale:619991355317289007> **dragon scale**: 256
+<:dragonessence:798691812520886282> **dragon essence**: 37
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 100,085
+<:arenacookie:589286303087067156> **arena cookie**: 6,171
+<:guildring:965887556820561920> **guild ring**: 232
+<:commonlootbox:599768567105191964> **common lootbox**: 99
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 58
+<:rarelootbox:568572122788659253> **rare lootbox**: 47
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 36
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 16
+<:OMEGAlootbox:599778801970446346> **OMEGA lootbox**: 1
+<:seed:817993494764716034> **seed**: 924
+<:potatoseed:821831598252097576> **potato seed**: 3
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 8
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 1,955
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 40
+<:sleepypotion:629547811779772418> **sleepy potion**: 2
+<:horsearmor:870176414597521418> **horse armor**: 1
+
+---Embed field 3 name---
+More items
+
+---Embed field 3 value---
+<:timedragonessence:798691812432150548> **time dragon essence**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011239100386377748
+2022-08-22 19:44:47,464:ERROR:discord: Time: 2022-08-22 11:44:44.984000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — cooldowns
+
+---Embed description---
+__**THERE IS A 20% COOLDOWN REDUCTION IN SLASH COMMANDS UNTIL THE PERMANENT TRANSITION**__!
+
+---Embed field 0 name---
+:gift: Rewards
+
+---Embed field 0 value---
+:clock4: ~-~ **`daily`** (**23h 34m 21s**)
+:clock4: ~-~ **`weekly`** (**3d 22h 22m 22s**)
+:clock4: ~-~ **`lootbox`** (**2h 45m 48s**)
+:clock4: ~-~ **`vote`** (**7h 43m 53s**)
+
+---Embed field 1 name---
+<:epicrpgsword:697935997555572858> Experience
+
+---Embed field 1 value---
+:clock4: ~-~ **`hunt`** (**0m 56s**)
+:clock4: ~-~ **`adventure`** (**0h 44m 18s**)
+:white_check_mark: ~-~ **`training`**
+:clock4: ~-~ **`duel`** (**1h 47m 27s**)
+:clock4: ~-~ **`quest | epic quest`** (**5h 44m 33s**)
+
+---Embed field 2 name---
+:sparkles: Progress
+
+---Embed field 2 value---
+:clock4: ~-~ **`chop | fish | pickup | mine`** (**3m 19s**)
+:clock4: ~-~ **`farm`** (**2m 57s**)
+:white_check_mark: ~-~ **`horse breeding | horse race`**
+:clock4: ~-~ **`arena`** (**0d 23h 46m 22s**)
+:white_check_mark: ~-~ **`dungeon | miniboss`**
+
+---Embed footer---
+Check the short version of this command with "rpg rd". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\cooldowns.py", line 329, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011239501101805730
+2022-08-22 19:44:55,385:ERROR:discord: Time: 2022-08-22 11:44:53.293000+00:00. Message content: ---Message content---
+Well done, **df joker ♡**!
+Earned 64,617 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011239535952273408
+2022-08-22 19:46:22,696:ERROR:discord: Time: 2022-08-22 11:46:19.553000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 465
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 35
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 1
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 4
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 76
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011239897752932353
+2022-08-22 19:48:31,667:ERROR:discord: Time: 2022-08-22 11:48:28.590000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 465
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 37
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 1
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 4
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 76
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011240438973345903
+2022-08-22 19:49:01,105:ERROR:discord: Time: 2022-08-22 11:48:58.006000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 465
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 37
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 1
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 4
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 76
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011240562352992296
+2022-08-22 19:50:46,910:ERROR:discord: Time: 2022-08-22 11:50:43.624000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 465
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 37
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 1
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 4
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 76
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011241005346992168
+2022-08-22 19:51:13,986:ERROR:discord: Time: 2022-08-22 11:51:11.877000+00:00. Message content: ---Message content---
+Well done, **mystic**!
+Earned 187,582 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011241123848650842
+2022-08-22 19:51:49,147:ERROR:discord: Time: 2022-08-22 11:51:46.194000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:ruby:603304907650629653> **ruby**: 17
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 465
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 39
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 1
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 5
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 76
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011241267784585306
+2022-08-22 19:53:11,522:ERROR:discord: Time: 2022-08-22 11:53:09.346000+00:00. Message content: ---Message content---
+<@502964169633431563>, you did not accept the quest. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\quest.py", line 373, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011241616549355581
+2022-08-22 19:53:35,692:ERROR:discord: Time: 2022-08-22 11:53:33.205000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+mystic — cooldowns
+
+---Embed description---
+__**THERE IS A 20% COOLDOWN REDUCTION IN SLASH COMMANDS UNTIL THE PERMANENT TRANSITION**__!
+
+---Embed field 0 name---
+:gift: Rewards
+
+---Embed field 0 value---
+:clock4: ~-~ **`daily`** (**15h 36m 17s**)
+:clock4: ~-~ **`weekly`** (**3d 6h 57m 31s**)
+:clock4: ~-~ **`lootbox`** (**0h 50m 51s**)
+:clock4: ~-~ **`vote`** (**0h 39m 45s**)
+
+---Embed field 1 name---
+<:epicrpgsword:697935997555572858> Experience
+
+---Embed field 1 value---
+:clock4: ~-~ **`hunt`** (**0m 33s**)
+:clock4: ~-~ **`adventure`** (**0h 28m 24s**)
+:clock4: ~-~ **`training`** (**7m 23s**)
+:white_check_mark: ~-~ **`duel`**
+:clock4: ~-~ **`quest | epic quest`** (**0h 38m 36s**)
+
+---Embed field 2 name---
+:sparkles: Progress
+
+---Embed field 2 value---
+:clock4: ~-~ **`chop | fish | pickup | mine`** (**3m 1s**)
+:clock4: ~-~ **`farm`** (**6m 28s**)
+:clock4: ~-~ **`horse breeding | horse race`** (**0d 8h 41m 30s**)
+:clock4: ~-~ **`arena`** (**0d 12h 13m 10s**)
+:white_check_mark: ~-~ **`dungeon | miniboss`**
+
+---Embed footer---
+Check the short version of this command with "rpg rd". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\cooldowns.py", line 329, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011241716621262948
+2022-08-22 20:01:18,388:ERROR:discord: Time: 2022-08-22 12:01:15.799000+00:00. Message content: ---Message content---
+Well done, **mystic**!
+Earned 178,719 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011243656881131560
+2022-08-22 20:03:11,657:ERROR:discord: Time: 2022-08-22 12:03:08.575000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+mystic — pets
+
+---Embed description---
+Pets can collect items and coins, more information with `pets info`
+**__Total pets__**: 30/48
+**__In adventure__**: 7/8
+**__Page__**: 1/5
+
+---Embed field 0 name---
+`ID: A`
+<:ponypet:873533167062089798> Pony — TIER X
+
+---Embed field 0 value---
+**__Pet score__:** 4,420
+**__Status__:** finding | **0h 3m 1s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:farmerskill:875278100534030346> **Farmer**
+
+---Embed field 1 name---
+`ID: B`
+<:pumpkinbat:759137581576486912> Pumpkin bat — TIER VIII
+
+---Embed field 1 value---
+**__Pet score__:** 3,232
+**__Status__:** finding | **0h 3m 16s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:monsterhunterskill:814751924095942658> **Monster hunter**
+
+---Embed field 2 name---
+`ID: C`
+<:hamsterpet:719714903052779564> Hamster — TIER VII
+
+---Embed field 2 value---
+**__Pet score__:** 1,309
+**__Status__:** back from adventure!
+`pets adventure claim`
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:boosterskill:814751924565049384> **BOOSTER**
+
+---Embed field 3 name---
+`ID: D`
+<:hamsterpet:719714903052779564> Hamster — TIER IV
+
+---Embed field 3 value---
+**__Pet score__:** 520
+**__Status__:** back from adventure!
+`pets adventure claim`
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:boosterskill:814751924565049384> **BOOSTER**
+
+---Embed field 4 name---
+`ID: E`
+<:snowballpet:773442058001449011> Snowball — TIER X
+
+---Embed field 4 value---
+**__Pet score__:** 8,560
+**__Status__:** back from adventure!
+`pets adventure claim`
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:diggerskill:704975699441745961> Digger** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [F]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:gifterskill:814751924309721109> **Gifter**
+
+---Embed field 5 name---
+`ID: F`
+<:goldenbunny:690840027420295248> Golden bunny — TIER XII
+
+---Embed field 5 value---
+**__Pet score__:** 15,960
+**__Status__:** learning | **0h 30m 27s**
+**<:fastskill:704975699408322621> Fast** [D]
+**<:happyskill:704975699353534514> Happy** [S]
+**<:cleverskill:704975699273973760> Clever** [B]
+**<:diggerskill:704975699441745961> Digger** [SS]
+**<:luckyskill:704975699181699143> Lucky** [S]
+**<:EPICskill:704975699349471292> EPIC** [SS]
+<:ascendedskill:714618677131083827> **ASCENDED** [E]
+<:fighterskill:785761629370843154> **FIGHTER** [D]
+<:fasterskill:814751924247068723> **Faster**
+
+---Embed field 6 name---
+Pets commands
+
+---Embed field 6 value---
+`pets info` - information about pets
+`pets summary` - a summary of your pets
+`pets adventure` - a pet will start an adventure, it may find some items for you!
+`pets fusion` - select 2 or more pets, there is a chance to get a higher tier pet
+`pets tournament` - send a pet to the pet tournament!
+`pets ascend` - the only way to get the ascended skill
+
+---Embed footer---
+no pet registered for the next pet tournament!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 301, in on_message
+    if reminder_created and user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011244129897959465
+2022-08-22 20:07:32,697:ERROR:discord: Time: 2022-08-22 12:07:29.802000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+mystic — pets
+
+---Embed description---
+Pets can collect items and coins, more information with `pets info`
+**__Total pets__**: 30/48
+**__In adventure__**: 1/8
+**__Page__**: 1/5
+
+---Embed field 0 name---
+`ID: B`
+<:pumpkinbat:759137581576486912> Pumpkin bat — TIER VIII
+
+---Embed field 0 value---
+**__Pet score__:** 3,232
+**__Status__:** idle
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:monsterhunterskill:814751924095942658> **Monster hunter**
+
+---Embed field 1 name---
+`ID: A`
+<:ponypet:873533167062089798> Pony — TIER X
+
+---Embed field 1 value---
+**__Pet score__:** 4,420
+**__Status__:** idle
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:farmerskill:875278100534030346> **Farmer**
+
+---Embed field 2 name---
+`ID: F`
+<:goldenbunny:690840027420295248> Golden bunny — TIER XII
+
+---Embed field 2 value---
+**__Pet score__:** 15,960
+**__Status__:** learning | **0h 26m 6s**
+**<:fastskill:704975699408322621> Fast** [D]
+**<:happyskill:704975699353534514> Happy** [S]
+**<:cleverskill:704975699273973760> Clever** [B]
+**<:diggerskill:704975699441745961> Digger** [SS]
+**<:luckyskill:704975699181699143> Lucky** [S]
+**<:EPICskill:704975699349471292> EPIC** [SS]
+<:ascendedskill:714618677131083827> **ASCENDED** [E]
+<:fighterskill:785761629370843154> **FIGHTER** [D]
+<:fasterskill:814751924247068723> **Faster**
+
+---Embed field 3 name---
+`ID: C`
+<:hamsterpet:719714903052779564> Hamster — TIER VII
+
+---Embed field 3 value---
+**__Pet score__:** 1,309
+**__Status__:** idle
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:boosterskill:814751924565049384> **BOOSTER**
+
+---Embed field 4 name---
+`ID: D`
+<:hamsterpet:719714903052779564> Hamster — TIER IV
+
+---Embed field 4 value---
+**__Pet score__:** 520
+**__Status__:** idle
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:boosterskill:814751924565049384> **BOOSTER**
+
+---Embed field 5 name---
+`ID: E`
+<:snowballpet:773442058001449011> Snowball — TIER X
+
+---Embed field 5 value---
+**__Pet score__:** 8,560
+**__Status__:** idle
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:diggerskill:704975699441745961> Digger** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [F]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:gifterskill:814751924309721109> **Gifter**
+
+---Embed field 6 name---
+Pets commands
+
+---Embed field 6 value---
+`pets info` - information about pets
+`pets summary` - a summary of your pets
+`pets adventure` - a pet will start an adventure, it may find some items for you!
+`pets fusion` - select 2 or more pets, there is a chance to get a higher tier pet
+`pets tournament` - send a pet to the pet tournament!
+`pets ascend` - the only way to get the ascended skill
+
+---Embed footer---
+no pet registered for the next pet tournament!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 301, in on_message
+    if reminder_created and user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011245225563398205
+2022-08-22 20:09:32,198:ERROR:discord: Time: 2022-08-22 12:09:30.029000+00:00. Message content: ---Message content---
+Well done, **mystic**!
+Earned 167,141 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011245729831993364
+2022-08-22 20:11:37,255:ERROR:discord: Time: 2022-08-22 12:11:35.095000+00:00. Message content: ---Message content---
+Well done, **df joker ♡**!
+Earned 70,072 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011246254396817419
+2022-08-22 20:11:49,274:ERROR:discord: Time: 2022-08-22 12:11:46.376000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:woodenlog:770880739926999070> **wooden log**: 5
+<:Apple:697940429668089867> **apple**: 877,183
+<:ruby:603304907650629653> **ruby**: 17
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 515
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 41
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 2
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 5
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:seed:817993494764716034> **seed**: 75
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011246301712744520
+2022-08-22 20:11:51,665:ERROR:discord: Time: 2022-08-22 12:11:49.566000+00:00. Message content: ---Message content---
+
+
+---Embed description---
+**EPIC NPC**: Alright! Our trade is done then
+
+---Embed field 0 name---
+Traded items
+
+---Embed field 0 value---
+**df joker ♡**: <:ruby:603304907650629653> x17 
+**EPIC NPC**: <:woodenlog:770880739926999070> x11,475. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 88, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011246315092586636
+2022-08-22 20:16:54,770:ERROR:discord: Time: 2022-08-22 12:16:51.483000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:Apple:697940429668089867> **apple**: 878,618
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 515
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 66
+<:zombieeye:542483215122694166> **zombie eye**: 39
+<:unicornhorn:545329267425149112> **unicorn horn**: 43
+<:mermaidhairs:545721882805272596> **mermaid hair**: 43
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:commonlootbox:599768567105191964> **common lootbox**: 2
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 11
+<:rarelootbox:568572122788659253> **rare lootbox**: 5
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 2
+<:EDGYlootbox:568572122226491395> **EDGY lootbox**: 3
+<:OMEGAlootbox:599778801970446346> **OMEGA lootbox**: 1
+<:seed:817993494764716034> **seed**: 75
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011247581424267315
+2022-08-22 20:18:12,347:ERROR:discord: Time: 2022-08-22 12:18:10.119000+00:00. Message content: ---Message content---
+Well done, **cyanlol**!
+Earned 11,562 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011247911247564913
+2022-08-22 20:18:41,929:ERROR:discord: Time: 2022-08-22 12:18:39.357000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+mystic — cooldowns
+
+---Embed description---
+__**THERE IS A 20% COOLDOWN REDUCTION IN SLASH COMMANDS UNTIL THE PERMANENT TRANSITION**__!
+
+---Embed field 0 name---
+:gift: Rewards
+
+---Embed field 0 value---
+:clock4: ~-~ **`daily`** (**15h 11m 11s**)
+:clock4: ~-~ **`weekly`** (**3d 6h 32m 24s**)
+:clock4: ~-~ **`lootbox`** (**2h 50m 12s**)
+:clock4: ~-~ **`vote`** (**0h 14m 39s**)
+
+---Embed field 1 name---
+<:epicrpgsword:697935997555572858> Experience
+
+---Embed field 1 value---
+:white_check_mark: ~-~ **`hunt`**
+:clock4: ~-~ **`adventure`** (**0h 34m 33s**)
+:clock4: ~-~ **`training`** (**0m 35s**)
+:white_check_mark: ~-~ **`duel`**
+:clock4: ~-~ **`quest | epic quest`** (**0h 13m 30s**)
+
+---Embed field 2 name---
+:sparkles: Progress
+
+---Embed field 2 value---
+:white_check_mark: ~-~ **`chop | fish | pickup | mine`**
+:white_check_mark: ~-~ **`farm`**
+:clock4: ~-~ **`horse breeding | horse race`** (**0d 8h 16m 24s**)
+:clock4: ~-~ **`arena`** (**0d 11h 48m 4s**)
+:white_check_mark: ~-~ **`dungeon | miniboss`**
+
+---Embed footer---
+Check the short version of this command with "rpg rd". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\cooldowns.py", line 329, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248033880625213
+2022-08-22 20:18:53,806:INFO:discord.client: Got a request to RESUME the websocket.
+2022-08-22 20:18:54,241:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-08-22 20:18:54,517:INFO:discord.gateway: Shard ID None has successfully RESUMED session e119fb2108bad8151c195421c40d006d under trace ["gateway-prd-main-pxdk",{"micros":482,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":232,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-blue-prd-2-18",{"micros":41}]}].
+2022-08-22 20:19:21,882:ERROR:discord: Time: 2022-08-22 12:19:19.355000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — lootbox
+
+---Embed field 0 name---
+<:EDGYlootbox:568572122226491395> EDGY lootbox opened! (x3)
+
+---Embed field 0 value---
++24 <:goldenfish:697940429500317727> golden fish
++31 <:EPIClog:541056003517710348> EPIC log
++6 <:Banana:697940429483540522> banana
++7 <:ruby:603304907650629653> ruby
++1 <:zombieeye:542483215122694166> zombie eye
++1 <:mermaidhairs:545721882805272596> mermaid hair. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 136, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248201644388423
+2022-08-22 20:19:32,255:ERROR:discord: Time: 2022-08-22 12:19:29.275000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:normiefish:697940429999439872> **normie fish**: 33
+<:goldenfish:697940429500317727> **golden fish**: 59
+<:woodenlog:770880739926999070> **wooden log**: 25
+<:EPIClog:541056003517710348> **EPIC log**: 49
+<:SUPERlog:541384398503673866> **SUPER log**: 1
+<:Apple:697940429668089867> **apple**: 878,620
+<:Banana:697940429483540522> **banana**: 10
+<:ruby:603304907650629653> **ruby**: 7
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 515
+<:breadcrop:818716266457071626> **bread**: 232
+<:wolfskin:541384010690199552> **wolf skin**: 68
+<:zombieeye:542483215122694166> **zombie eye**: 41
+<:unicornhorn:545329267425149112> **unicorn horn**: 43
+<:mermaidhairs:545721882805272596> **mermaid hair**: 45
+<:chip:546048827073757205> **chip**: 2
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:OMEGAlootbox:599778801970446346> **OMEGA lootbox**: 1
+<:seed:817993494764716034> **seed**: 75
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248243251892275
+2022-08-22 20:20:49,979:ERROR:discord: Time: 2022-08-22 12:20:47.123000+00:00. Message content: ---Message content---
+Your pet has started an adventure and will be back in **4h 0m 0s**!
+Check the progress of your pet in `pets`
+Once the adventure is completed, get the rewards with `pets adventure claim`. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 119, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248569770053702
+2022-08-22 20:20:54,661:ERROR:discord: Time: 2022-08-22 12:20:51.456000+00:00. Message content: ---Message content---
+**6** of your pets have started an adventure!
+Check the progress of your pets in `pets`
+Once the adventure is completed, get the rewards with `pets adventure claim`
+For some completely unknown reason, the following pets are back instantly: `C`. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 85, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.SKILL_TIME_TRAVELER)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248587943972884
+2022-08-22 20:21:12,697:ERROR:discord: Time: 2022-08-22 12:21:10.232000+00:00. Message content: ---Message content---
+Your pet has started an adventure and will be back in **4h 0m 0s**!
+Check the progress of your pet in `pets`
+Once the adventure is completed, get the rewards with `pets adventure claim`. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 119, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248666696241232
+2022-08-22 20:21:14,474:ERROR:discord: Time: 2022-08-22 12:21:11.968000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — pets
+
+---Embed description---
+Pets can collect items and coins, more information with `pets info`
+**__Total pets__**: 34/42
+**__In adventure__**: 8/8
+**__Page__**: 2/6
+
+---Embed field 0 name---
+`ID: G`
+<:dogpet:703152291540369450> Dog — TIER V
+
+---Embed field 0 value---
+**__Pet score__:** 25
+**__Status__:** idle
+<:normieskill:706413395414483035> **Normie**
+
+---Embed field 1 name---
+`ID: H`
+<:catpet:703150997517893692> Cat — TIER V
+
+---Embed field 1 value---
+**__Pet score__:** 25
+**__Status__:** idle
+<:normieskill:706413395414483035> **Normie**
+
+---Embed field 2 name---
+`ID: I`
+<:pumpkinbat:759137581576486912> Pumpkin bat — TIER X
+
+---Embed field 2 value---
+**__Pet score__:** 8,020
+**__Status__:** finding | **3h 59m 39s**
+**<:diggerskill:704975699441745961> Digger** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [F]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:monsterhunterskill:814751924095942658> **Monster hunter**
+
+---Embed field 3 name---
+`ID: J`
+<:dragonpet:705963075576135691> Dragon — TIER III
+
+---Embed field 3 value---
+**__Pet score__:** 387
+**__Status__:** finding | **3h 59m 39s**
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+
+---Embed field 4 name---
+`ID: K`
+<:dogpet:703152291540369450> Dog — TIER III
+
+---Embed field 4 value---
+**__Pet score__:** 219
+**__Status__:** idle
+**<:luckyskill:704975699181699143> Lucky** [S]
+
+---Embed field 5 name---
+`ID: L`
+<:dogpet:703152291540369450> Dog — TIER II
+
+---Embed field 5 value---
+**__Pet score__:** 8
+**__Status__:** idle
+**<:fastskill:704975699408322621> Fast** [F]
+
+---Embed field 6 name---
+Pets commands
+
+---Embed field 6 value---
+`pets info` - information about pets
+`pets summary` - a summary of your pets
+`pets adventure` - a pet will start an adventure, it may find some items for you!
+`pets fusion` - select 2 or more pets, there is a chance to get a higher tier pet
+`pets tournament` - send a pet to the pet tournament!
+`pets ascend` - the only way to get the ascended skill
+
+---Embed footer---
+pet ID "J" registered for the next pet tournament!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 301, in on_message
+    if reminder_created and user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248673977540638
+2022-08-22 20:21:18,525:ERROR:discord: Time: 2022-08-22 12:21:15.634000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+cyanlol — pets
+
+---Embed description---
+Pets can collect items and coins, more information with `pets info`
+**__Total pets__**: 43/47
+**__In adventure__**: 10/11
+**__Page__**: 1/8
+
+---Embed field 0 name---
+`ID: A`
+<:pumpkinbat:759137581576486912> Pumpkin bat — TIER X
+
+---Embed field 0 value---
+**__Pet score__:** 4,240
+**__Status__:** finding | **2h 26m 33s**
+**<:fastskill:704975699408322621> Fast** [A]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:cleverskill:704975699273973760> Clever** [S]
+**<:diggerskill:704975699441745961> Digger** [B]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS]
+**<:EPICskill:704975699349471292> EPIC** [S]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:monsterhunterskill:814751924095942658> **Monster hunter**
+
+---Embed field 1 name---
+`ID: B`
+<:ponypet:873533167062089798> Pony — TIER X
+
+---Embed field 1 value---
+**__Pet score__:** 3,340
+**__Status__:** finding | **0h 36m 3s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:farmerskill:875278100534030346> **Farmer**
+
+---Embed field 2 name---
+`ID: C`
+<:pinkfishpet:802403157703262218> Pink fish — TIER XIII
+
+---Embed field 2 value---
+**__Pet score__:** 11,687
+**__Status__:** finding | **0h 36m 3s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:diggerskill:704975699441745961> Digger** [SS]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [S]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [F]
+<:fighterskill:785761629370843154> **FIGHTER** [C]
+<:fisherfishskill:814751924489814035> **Fisherfish**
+
+---Embed field 3 name---
+`ID: D`
+<:hamsterpet:719714903052779564> Hamster — TIER X
+
+---Embed field 3 value---
+**__Pet score__:** 8,560
+**__Status__:** finding | **0h 36m 3s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:diggerskill:704975699441745961> Digger** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [F]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:boosterskill:814751924565049384> **BOOSTER**
+
+---Embed field 4 name---
+`ID: E`
+<:goldenbunny:690840027420295248> Golden bunny — TIER XV
+
+---Embed field 4 value---
+**__Pet score__:** 75,825
+**__Status__:** finding | **1h 7m 1s**
+**<:fastskill:704975699408322621> Fast** [SS+]
+**<:happyskill:704975699353534514> Happy** [SS+]
+**<:cleverskill:704975699273973760> Clever** [SS+]
+**<:diggerskill:704975699441745961> Digger** [SS+]
+**<:luckyskill:704975699181699143> Lucky** [SS+]
+**<:timetravelerskill:704975699580289074> Time traveler** [SS+]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:ascendedskill:714618677131083827> **ASCENDED** [SS+]
+<:fighterskill:785761629370843154> **FIGHTER** [A]
+<:masterskill:932816413733838858> **MASTER** [F]
+<:fasterskill:814751924247068723> **Faster**
+
+---Embed field 5 name---
+`ID: F`
+<:ponypet:873533167062089798> Pony — TIER X
+
+---Embed field 5 value---
+**__Pet score__:** 4,180
+**__Status__:** finding | **2h 6m 47s**
+**<:fastskill:704975699408322621> Fast** [S]
+**<:happyskill:704975699353534514> Happy** [A]
+**<:cleverskill:704975699273973760> Clever** [S]
+**<:diggerskill:704975699441745961> Digger** [A]
+**<:luckyskill:704975699181699143> Lucky** [S]
+**<:timetravelerskill:704975699580289074> Time traveler** [S]
+**<:EPICskill:704975699349471292> EPIC** [SS+]
+<:fighterskill:785761629370843154> **FIGHTER** [F]
+<:farmerskill:875278100534030346> **Farmer**
+
+---Embed field 6 name---
+Pets commands
+
+---Embed field 6 value---
+`pets info` - information about pets
+`pets summary` - a summary of your pets
+`pets adventure` - a pet will start an adventure, it may find some items for you!
+`pets fusion` - select 2 or more pets, there is a chance to get a higher tier pet
+`pets tournament` - send a pet to the pet tournament!
+`pets ascend` - the only way to get the ascended skill
+
+---Embed footer---
+no pet registered for the next pet tournament!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 301, in on_message
+    if reminder_created and user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011248689353859214
+2022-08-22 20:23:29,350:ERROR:discord: Time: 2022-08-22 12:23:26.447000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:normiefish:697940429999439872> **normie fish**: 33
+<:goldenfish:697940429500317727> **golden fish**: 73
+<:EPICfish:543182761431793715> **EPIC fish**: 10
+<:woodenlog:770880739926999070> **wooden log**: 25
+<:EPIClog:541056003517710348> **EPIC log**: 49
+<:SUPERlog:541384398503673866> **SUPER log**: 75
+<:HYPERlog:546054891408457730> **HYPER log**: 2
+<:Apple:697940429668089867> **apple**: 878,620
+<:Banana:697940429483540522> **banana**: 10
+<:ruby:603304907650629653> **ruby**: 24
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 515
+<:breadcrop:818716266457071626> **bread**: 265
+<:wolfskin:541384010690199552> **wolf skin**: 68
+<:zombieeye:542483215122694166> **zombie eye**: 41
+<:unicornhorn:545329267425149112> **unicorn horn**: 43
+<:mermaidhairs:545721882805272596> **mermaid hair**: 45
+<:chip:546048827073757205> **chip**: 2
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 1
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 1
+<:OMEGAlootbox:599778801970446346> **OMEGA lootbox**: 1
+<:seed:817993494764716034> **seed**: 74
+<:breadseed:821831598018265110> **bread seed**: 1
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011249238023360572
+2022-08-22 20:23:30,410:ERROR:discord: Time: 2022-08-22 12:23:27.968000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — cooldowns
+
+---Embed description---
+__**THERE IS A 20% COOLDOWN REDUCTION IN SLASH COMMANDS UNTIL THE PERMANENT TRANSITION**__!
+
+---Embed field 0 name---
+:gift: Rewards
+
+---Embed field 0 value---
+:clock4: ~-~ **`daily`** (**22h 55m 38s**)
+:clock4: ~-~ **`weekly`** (**3d 21h 43m 39s**)
+:clock4: ~-~ **`lootbox`** (**2h 7m 5s**)
+:clock4: ~-~ **`vote`** (**7h 5m 10s**)
+
+---Embed field 1 name---
+<:epicrpgsword:697935997555572858> Experience
+
+---Embed field 1 value---
+:clock4: ~-~ **`hunt`** (**0m 57s**)
+:clock4: ~-~ **`adventure`** (**0h 56m 48s**)
+:clock4: ~-~ **`training`** (**3m 7s**)
+:clock4: ~-~ **`duel`** (**1h 8m 44s**)
+:clock4: ~-~ **`quest | epic quest`** (**5h 5m 50s**)
+
+---Embed field 2 name---
+:sparkles: Progress
+
+---Embed field 2 value---
+:clock4: ~-~ **`chop | fish | pickup | mine`** (**1m 52s**)
+:clock4: ~-~ **`farm`** (**6m 30s**)
+:white_check_mark: ~-~ **`horse breeding | horse race`**
+:clock4: ~-~ **`arena`** (**0d 23h 7m 39s**)
+:clock4: ~-~ **`dungeon | miniboss`** (**11h 54m 59s**)
+
+---Embed footer---
+Check the short version of this command with "rpg rd". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\cooldowns.py", line 329, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011249244402884658
+2022-08-22 20:23:33,896:ERROR:discord: Time: 2022-08-22 12:23:31.802000+00:00. Message content: ---Message content---
+<@705394986216194099>, you are registered already!
+The next race is in **0h 36m 29s**, you can see the winners every 2 hours in the official server of EPIC RPG. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\horse-race.py", line 91, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011249260483850310
+2022-08-22 20:23:44,047:ERROR:discord: Time: 2022-08-22 12:23:40.790000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+df joker ♡ — inventory
+
+---Embed field 0 name---
+Items
+
+---Embed field 0 value---
+<:normiefish:697940429999439872> **normie fish**: 33
+<:goldenfish:697940429500317727> **golden fish**: 73
+<:EPICfish:543182761431793715> **EPIC fish**: 10
+<:woodenlog:770880739926999070> **wooden log**: 25
+<:EPIClog:541056003517710348> **EPIC log**: 49
+<:SUPERlog:541384398503673866> **SUPER log**: 75
+<:HYPERlog:546054891408457730> **HYPER log**: 2
+<:Apple:697940429668089867> **apple**: 878,620
+<:Banana:697940429483540522> **banana**: 10
+<:ruby:603304907650629653> **ruby**: 24
+<:potatocrop:818712007539818517> **potato**: 285
+<:carrotcrop:818712920820285450> **carrot**: 515
+<:breadcrop:818716266457071626> **bread**: 265
+<:wolfskin:541384010690199552> **wolf skin**: 68
+<:zombieeye:542483215122694166> **zombie eye**: 41
+<:unicornhorn:545329267425149112> **unicorn horn**: 43
+<:mermaidhairs:545721882805272596> **mermaid hair**: 45
+<:chip:546048827073757205> **chip**: 2
+<:dragonessence:798691812520886282> **dragon essence**: 15
+
+---Embed field 1 name---
+Consumables
+
+---Embed field 1 value---
+<:lifepotion:541053511979499521> **life potion**: 167
+<:arenacookie:589286303087067156> **arena cookie**: 7,437
+<:guildring:965887556820561920> **guild ring**: 242
+<:uncommonlootbox:568572122788659250> **uncommon lootbox**: 1
+<:EPIClootbox:568572122788659211> **EPIC lootbox**: 1
+<:OMEGAlootbox:599778801970446346> **OMEGA lootbox**: 1
+<:seed:817993494764716034> **seed**: 74
+<:breadseed:821831598018265110> **bread seed**: 1
+<:OMEGAhorsetoken:743709887175065670> **OMEGA horse token**: 4
+
+---Embed field 2 name---
+Horse festival
+
+---Embed field 2 value---
+<:horseshoe:864975076380901386> **horseshoe**: 2,235
+<:goldenhorseshoe:864975076361240596> **golden horseshoe**: 57
+<:sleepypotion:629547811779772418> **sleepy potion**: 12
+<:horsearmor:870176414597521418> **horse armor**: 1. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\ruby-counter.py", line 194, in on_message
+    await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011249298182254642
+2022-08-22 20:24:13,548:ERROR:discord: Time: 2022-08-22 12:24:11.460000+00:00. Message content: ---Message content---
+Well done, **df joker ♡**!
+Earned 80,148 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011249426821558378
+2022-08-22 20:26:57,861:ERROR:discord: Time: 2022-08-22 12:26:55.740000+00:00. Message content: ---Message content---
+**df joker ♡** drinks a <:sleepypotion:629547811779772418> sleepy potion...
+**df joker ♡** has slept for a day and feels like all cooldowns are ready. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\sleepy-potion.py", line 63, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011250115861819472
+2022-08-22 20:27:14,566:ERROR:discord: Time: 2022-08-22 12:27:12.299000+00:00. Message content: ---Message content---
+Well done, **df joker ♡**!
+Earned 94,817 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\training.py", line 222, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011250185315295272
+2022-08-22 20:27:41,535:INFO:discord.client: logging in using static token
+2022-08-22 20:27:42,437:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 20:27:42,805:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-rwvk",{"micros":97478,"calls":["id_created",{"micros":589,"calls":[]},"session_lookup_time",{"micros":13925,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-141",{"micros":81924,"calls":["start_session",{"micros":36767,"calls":["discord-api-5dbb8ddd55-wt7q6",{"micros":31112,"calls":["get_user",{"micros":7890},"get_guilds",{"micros":3883},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":921},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":28,"calls":[]},"presence_started",{"micros":359,"calls":[]},"guilds_started",{"micros":44756,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]},"connect_finished",{"micros":5,"calls":[]},"build_ready",{"micros":4,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: d89bcb3137ea4dccfb9e1339b705c425).
+2022-08-22 20:27:44,816:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 20:30:15,698:INFO:discord.client: logging in using static token
+2022-08-22 20:30:16,635:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 20:30:16,989:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-w42s",{"micros":72315,"calls":["id_created",{"micros":679,"calls":[]},"session_lookup_time",{"micros":2900,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-blue-prd-2-116",{"micros":68221,"calls":["start_session",{"micros":40790,"calls":["discord-api-5dbb8ddd55-vnqhb",{"micros":37213,"calls":["get_user",{"micros":10373},"get_guilds",{"micros":2604},"send_scheduled_deletion_message",{"micros":40},"guild_join_requests",{"micros":702},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":29,"calls":[]},"presence_started",{"micros":8135,"calls":[]},"guilds_started",{"micros":361,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":18892,"calls":[]},"connect_finished",{"micros":18896,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 908e325e93262608e1272a6ebdf7fa48).
+2022-08-22 20:30:18,984:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 20:30:51,618:ERROR:discord: Time: 2022-08-22 12:30:49.448000+00:00. Message content: ---Message content---
+
+
+---Embed author---
+undefined — cooldown
+
+---Embed title---
+You have started an arena recently, wait at least **19h 9m 54s**...
+
+---Embed description---
+If you don't want to wait this much, you can help the bot in [Patreon](https://www.patreon.com/join/epicrpgdiscordbot) and get some ingame benefits!. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\arena.py", line 93, in on_message
+    await functions.add_reminder_reaction(message, reminder, user_settings)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\resources\functions.py", line 91, in add_reminder_reaction
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.NAVI)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011225570673164310/1011251096104214570
+2022-08-22 20:31:34,218:INFO:discord.client: logging in using static token
+2022-08-22 20:31:35,124:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 20:31:35,556:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-pptk",{"micros":146445,"calls":["id_created",{"micros":746,"calls":[]},"session_lookup_time",{"micros":319,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-blue-prd-2-140",{"micros":144680,"calls":["start_session",{"micros":85206,"calls":["discord-api-5dbb8ddd55-2vpv4",{"micros":81129,"calls":["get_user",{"micros":19788},"get_guilds",{"micros":4781},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":162},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":23,"calls":[]},"presence_started",{"micros":27105,"calls":[]},"guilds_started",{"micros":279,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":32048,"calls":[]},"connect_finished",{"micros":32054,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":5,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 05b82a4715a6d6e4657bbcbd4274d000).
+2022-08-22 20:31:37,558:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 20:57:36,874:ERROR:discord: Time: 2022-08-22 12:57:33.950000+00:00. Message content: ---Message content---
+**4** of your pets have started an adventure!
+Check the progress of your pets in `pets`
+Once the adventure is completed, get the rewards with `pets adventure claim`
+For some completely unknown reason, the following pets are back instantly: `C`. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 85, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.SKILL_TIME_TRAVELER)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011249133950083242/1011257825873379451
+2022-08-22 21:01:09,380:ERROR:discord: Time: 2022-08-22 13:01:07.175000+00:00. Message content: ---Message content---
+
+
+---Embed field 0 name---
+<:dogpet:703152291540369450> **Dog**
+
+---Embed field 0 value---
+:heart: Happiness: 41
+:taco: Hunger: 0
+**CHANCE**: 48.23%
+
+The **Dog** got bored and left
+
+---Embed footer---
+More information about pets with "/pets info". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 265, in on_message
+    await message.add_reaction(emojis.PANDA_SAD)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011249133950083242/1011258720203833426
+2022-08-22 21:20:55,810:INFO:discord.client: logging in using static token
+2022-08-22 21:20:56,728:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 21:20:57,126:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-2gz5",{"micros":123390,"calls":["id_created",{"micros":889,"calls":[]},"session_lookup_time",{"micros":438,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-blue-prd-2-171",{"micros":121224,"calls":["start_session",{"micros":56101,"calls":["discord-api-5dbb8ddd55-k2xpv",{"micros":47105,"calls":["get_user",{"micros":14094},"get_guilds",{"micros":6028},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":159},"authorized_ip_coro",{"micros":15}]}]},"starting_guild_connect",{"micros":31,"calls":[]},"presence_started",{"micros":27185,"calls":[]},"guilds_started",{"micros":37892,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]},"connect_finished",{"micros":7,"calls":[]},"build_ready",{"micros":4,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: c202fb419f2d2245b65c9c0c2be36cb1).
+2022-08-22 21:20:59,147:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 21:34:12,862:ERROR:discord: Time: 2022-08-22 13:34:10.694000+00:00. Message content: ---Message content---
+:crossed_swords: **cyanlol** fights the horde...
+**FAILED!!** There was a grand total of 29320 zombies.. fighting them wasn't very clever, so **cyanlol** ran away
+Earned 0 coins and 0 XP. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 161, in on_message
+    await message.add_reaction(emojis.PEPE_LAUGH)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011249133950083242/1011267039685509242
+2022-08-22 21:39:04,076:ERROR:discord: Time: 2022-08-22 13:39:01.874000+00:00. Message content: ---Message content---
+<:ULTRAEDGYsword:589288552890630144> `ULTRA-EDGY sword` successfully forged!
+**df joker ♡** earned 1 <:coolness:863531531435245599> coolness. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 232, in on_message
+    await message.add_reaction(emojis.PANDA_COOL)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011249160382591137/1011268260982947960
+2022-08-22 21:40:07,928:INFO:discord.client: logging in using static token
+2022-08-22 21:40:08,861:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 21:40:09,215:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-85xs",{"micros":55162,"calls":["id_created",{"micros":626,"calls":[]},"session_lookup_time",{"micros":6556,"calls":[]},"session_lookup_finished",{"micros":23,"calls":[]},"discord-sessions-blue-prd-2-23",{"micros":47451,"calls":["start_session",{"micros":37935,"calls":["discord-api-5dbb8ddd55-wjjg2",{"micros":33359,"calls":["get_user",{"micros":8072},"get_guilds",{"micros":3308},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":525},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":29,"calls":[]},"presence_started",{"micros":5133,"calls":[]},"guilds_started",{"micros":354,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3969,"calls":[]},"connect_finished",{"micros":3974,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 0b3ed490cfc52874eb8699ecb32a1c84).
+2022-08-22 21:40:11,220:INFO:discord: mystic's reminder bot has connected to Discord!
+2022-08-22 21:44:08,496:INFO:discord.client: logging in using static token
+2022-08-22 21:44:09,398:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 21:44:09,774:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-ngwj",{"micros":103721,"calls":["id_created",{"micros":688,"calls":[]},"session_lookup_time",{"micros":3604,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-176",{"micros":98612,"calls":["start_session",{"micros":60957,"calls":["discord-api-5dbb8ddd55-hzvw2",{"micros":56433,"calls":["get_user",{"micros":9748},"get_guilds",{"micros":9603},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":11}]}]},"starting_guild_connect",{"micros":37,"calls":[]},"presence_started",{"micros":396,"calls":[]},"guilds_started",{"micros":448,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":36760,"calls":[]},"connect_finished",{"micros":36764,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 2294b78180d149d76cbe56296c777447).
+2022-08-22 21:44:11,786:INFO:discord: pp bot has connected to Discord!
+2022-08-22 21:44:44,353:INFO:discord.client: logging in using static token
+2022-08-22 21:44:45,229:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 21:44:45,606:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-2j14",{"micros":95740,"calls":["id_created",{"micros":750,"calls":[]},"session_lookup_time",{"micros":257,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-165",{"micros":93427,"calls":["start_session",{"micros":82064,"calls":["discord-api-5dbb8ddd55-8jb9d",{"micros":78023,"calls":["get_user",{"micros":16774},"get_guilds",{"micros":12668},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":31,"calls":[]},"presence_started",{"micros":310,"calls":[]},"guilds_started",{"micros":11008,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]},"connect_finished",{"micros":5,"calls":[]},"build_ready",{"micros":5,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":1,"calls":[]}]}]}] (Session ID: e4fe11f0a314b1f93e5f91e540860548).
+2022-08-22 21:44:47,611:INFO:discord: pp bot has connected to Discord!
+2022-08-22 21:52:50,035:ERROR:discord: Time: 2022-08-22 13:52:46.963000+00:00. Message content: ---Message content---
+**5** of your pets have started an adventure!
+Check the progress of your pets in `pets`
+Once the adventure is completed, get the rewards with `pets adventure claim`
+For some completely unknown reason, the following pets are back instantly: `B`. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\pets.py", line 85, in on_message
+    if user_settings.reactions_enabled: await message.add_reaction(emojis.SKILL_TIME_TRAVELER)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011226511791116338/1011271721657045054
+2022-08-22 22:08:40,056:INFO:discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2022-08-22 22:08:40,056:INFO:discord.client: Got a request to RESUME the websocket.
+2022-08-22 22:08:40,056:ERROR:discord.client: Attempting a reconnect in 0.31s
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 855, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 550, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\gateway.py", line 329, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 2618, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 285, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2022-08-22 22:08:40,497:ERROR:discord.client: Attempting a reconnect in 3.20s
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 855, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 550, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\gateway.py", line 329, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 2618, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 285, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2022-08-22 22:08:44,409:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-08-22 22:08:44,691:INFO:discord.gateway: Shard ID None has successfully RESUMED session e4fe11f0a314b1f93e5f91e540860548 under trace ["gateway-prd-main-q779",{"micros":936,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":221,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-blue-prd-2-165",{"micros":57}]}].
+2022-08-22 22:09:19,490:INFO:discord.client: logging in using static token
+2022-08-22 22:09:20,459:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-08-22 22:09:20,806:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-zk06",{"micros":56920,"calls":["id_created",{"micros":874,"calls":[]},"session_lookup_time",{"micros":637,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-108",{"micros":54781,"calls":["start_session",{"micros":41759,"calls":["discord-api-5dbb8ddd55-jxgnb",{"micros":36381,"calls":["get_user",{"micros":11316},"get_guilds",{"micros":3657},"send_scheduled_deletion_message",{"micros":11},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":11}]}]},"starting_guild_connect",{"micros":1263,"calls":[]},"presence_started",{"micros":1272,"calls":[]},"guilds_started",{"micros":356,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":10119,"calls":[]},"connect_finished",{"micros":10124,"calls":[]},"build_ready",{"micros":4,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]},"clean_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 8a61fc360afee63308549d268ae55e22).
+2022-08-22 22:09:22,816:INFO:discord: pp bot has connected to Discord!
+2022-08-22 22:12:31,921:ERROR:discord: Time: 2022-08-22 14:12:29.687000+00:00. Message content: ---Message content---
+
+
+---Embed field 0 name---
+<:dragonpet:705963075576135691> **Dragon**
+
+---Embed field 0 value---
+The **Dragon** got bored and left
+
+---Embed footer---
+More information about pets with "/pets info". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 265, in on_message
+    await message.add_reaction(emojis.PANDA_SAD)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011226511791116338/1011276682361049129
+2022-08-22 22:21:17,362:ERROR:discord: Time: 2022-08-22 14:21:15.284000+00:00. Message content: ---Message content---
+<:ULTRAOMEGAarmor:707334203066417162> `ULTRA-OMEGA armor` successfully forged!
+**mystic** earned 1 <:coolness:863531531435245599> coolness. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 232, in on_message
+    await message.add_reaction(emojis.PANDA_COOL)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011226511791116338/1011278886874665111
+2022-08-22 22:42:16,225:ERROR:discord: Time: 2022-08-22 14:42:13.998000+00:00. Message content: ---Message content---
+<:OMEGAsword:624335402387636225> `OMEGA sword` successfully forged!
+**,,Saturn** earned 1 <:coolness:863531531435245599> coolness. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 232, in on_message
+    await message.add_reaction(emojis.PANDA_COOL)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011272627475726366/1011284166303825960
+2022-08-22 23:07:32,379:ERROR:discord: Time: 2022-08-22 15:07:30.156000+00:00. Message content: ---Message content---
+
+
+---Embed field 0 name---
+<:dogpet:703152291540369450> **Dog**
+
+---Embed field 0 value---
+:heart: Happiness: 53
+:taco: Hunger: 2
+**CHANCE**: 60%
+
+The **Dog** got bored and left
+
+---Embed footer---
+More information about pets with "/pets info". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 265, in on_message
+    await message.add_reaction(emojis.PANDA_SAD)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011272627475726366/1011290525531381771
+2022-08-22 23:40:08,675:ERROR:discord: Time: 2022-08-22 15:40:06.356000+00:00. Message content: ---Message content---
+
+
+---Embed field 0 name---
+<:dogpet:703152291540369450> **Dog**
+
+---Embed field 0 value---
+:heart: Happiness: 45
+:taco: Hunger: 25
+**CHANCE**: 23.52%
+
+The **Dog** got bored and left
+Next time try with more actions!
+Example: `pat pat feed pat feed`
+
+---Embed footer---
+More information about pets with "/pets info". Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 265, in on_message
+    await message.add_reaction(emojis.PANDA_SAD)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011270865138229399/1011298730428878860
+2022-08-22 23:47:22,988:ERROR:discord: Time: 2022-08-22 15:47:17.157000+00:00. Message content: ---Message content---
+**དᴍɪɴɢཌ** is mining with **FOUR DRILLS**!?
+**དᴍɪɴɢཌ** got 309,750 <:coin:557642215284015124> coins
+**དᴍɪɴɢཌ** mined with too much force, one of the nearby trees got **DESTROYED** and dropped 111 <:SUPERlog:541384398503673866> SUPER logs. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\work.py", line 336, in on_message
+    await message.add_reaction(emojis.SWEATY)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011270865138229399/1011300537339215893
+2022-08-22 23:54:45,360:ERROR:discord: Time: 2022-08-22 15:54:42.455000+00:00. Message content: ---Message content---
+<:OMEGAarmor:623973694280171531> `OMEGA armor` successfully forged!
+**,,Saturn** earned 1 <:coolness:863531531435245599> coolness. Error: Got an error in event on_message:
+Error: 400 Bad Request (error code: 10014): Unknown Emoji
+Traceback:   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\client.py", line 382, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\LENOVO\Desktop\reminder bot\Navi-master\cogs\fun.py", line 232, in on_message
+    await message.add_reaction(emojis.PANDA_COOL)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 1476, in add_reaction
+    await self._state.http.add_reaction(self.channel.id, self.id, emoji)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 360, in request
+    raise HTTPException(response, data)
+
+str
+
+Exception type:
+builtins.str
+
+Traceback:
+N/A. User settings: N/A. Jump URL: https://discord.com/channels/1011225567317721218/1011272627475726366/1011302405054414948
+2022-08-23 00:05:20,564:INFO:discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2022-08-23 00:05:20,565:INFO:discord.client: Got a request to RESUME the websocket.
+2022-08-23 00:05:21,175:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-08-23 00:05:21,404:INFO:discord.gateway: Shard ID None has successfully RESUMED session 8a61fc360afee63308549d268ae55e22 under trace ["gateway-prd-main-htqr",{"micros":1750,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":289,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-108",{"micros":27}]}].
